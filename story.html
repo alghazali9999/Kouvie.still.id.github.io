@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kouvie Still</title>
+
+    <!-- Installition Tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- And Installition Tailwind css  -->
+
+    <!-- Style css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Style css  -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts -->
+
+    <!-- Scroll Animate AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- And Scroll Animate AOS -->
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- And Link Font Awesome -->
+
+    <!-- Script Icons -->
+    <script src="https://kit.fontawesome.com/c5a550f03c.js" crossorigin="anonymous"></script>
+    <!-- And Script Icons -->
+
+    <!-- Image Icons -->
+    <link rel="icon" href="https://i.pinimg.com/564x/51/08/59/5108592a4e3c87dfbfeca3aa8f415490.jpg" type="image/gif"
+        sizes="16x16">
+    <!-- Image Icons -->
+
+</head>
+
+<body>
+
+    <!-- Header/Navbar -->
+    <div
+        class="flex justify-between items-center py-6 px-4 sticky top-0 bg-white z-50 relative w-full h-full mx-auto max-w-screen-xl px-4">
+        <!-- Logo -->
+        <a href="index.html">
+            <div class="flex items-center items-center">
+                <span class="text-xl sm:text-2xl md:text-2xl font-bold italic text-rose-600">Kouvie</span>
+                <span class="text-xl sm:text-2xl md:text-2xl font-bold italic text-black">still</span>
+                <span class="ml-1 text-red-500"><i class="fa-solid fa-coffee fa-beat"></i></span>
+            </div>
+        </a>
+        <!-- Hamburger Menu (Muncul untuk layar di bawah 1024px) -->
+        <div class="lg:hidden">
+            <button id="hamburger" class="relative w-6 h-6 flex flex-col justify-center items-center space-y-0.6"
+                onclick="toggleMenu()">
+                <!-- Garis 1 -->
+                <span class="block w-6 h-0.5 bg-black transform transition duration-500 ease-in-out origin-center"
+                    id="line1"></span>
+                <!-- Garis 2 -->
+                <span class="block w-6 h-0.5 bg-black transform transition duration-500 ease-in-out origin-center"
+                    id="line2"></span>
+            </button>
+        </div>
+
+        <!-- Menu Navigasi (Hanya muncul di layar besar) -->
+        <div class="hidden lg:flex space-x-6">
+            <a href="order.html"
+                class="text-gray-500 text-xs font-medium hover:text-black font-bold border-b-2 border-transparent hover:border-rose-600 transition duration-500">Product</a>
+            <a href="about.html"
+                class="text-gray-500 text-xs font-medium hover:text-black font-bold border-b-2 border-transparent hover:border-rose-600 transition duration-500">About</a>
+            <a href="story.html"
+                class="text-gray-500 text-xs font-medium hover:text-black font-bold border-b-2 border-transparent hover:border-rose-600 transition duration-500">Story</a>
+            <a href="#"
+                class="text-gray-500 text-xs font-medium hover:text-black font-bold border-b-2 border-transparent hover:border-rose-600 transition duration-500">No
+                Hp
+            </a>
+            <span class="ml-1 text-red-500"><i class="fa-solid fa-coffee fa-beat"></i></span>
+        </div>
+    </div>
+
+    <!-- Sidebar / Slide Menu with Fade Up -->
+    <div id="slideMenu"
+        class="fixed inset-x-0 bottom-0 bg-white transform translate-y-full opacity-0 transition-all fade-up duration-700 ease-in-out px-4 z-20">
+        <div class="flex flex-col items-center justify-center text-center h-screen p-4 space-y-4">
+            <a href="order.html"
+                class="opacity-1 transition-all fade-up duration-700 ease-in-out text-black text-2xl font-medium hover:text-gray-500">Product</a>
+            <a href="about.html"
+                class="opacity-1 transition-all fade-up duration-700 ease-in-out text-black text-2xl font-medium hover:text-gray-500">About</a>
+            <a href="story.html"
+                class="opacity-1 transition-all fade-up duration-700 ease-in-out text-black text-2xl font-medium hover:text-gray-500">Story</a>
+            <a href="#"
+                class="opacity-1 transition-all fade-up duration-700 ease-in-out text-black text-2xl font-medium hover:text-gray-500">No
+                Hp
+            </a>
+            <br>
+            <div class="flex items-center items-center py-32">
+                <span class="text-xl sm:text-2xl md:text-2xl font-bold italic text-rose-600">Kouvie</span>
+                <span class="text-xl sm:text-2xl md:text-2xl font-bold italic text-black">still</span>
+                <span class="ml-1 text-red-500"><i class="fa-solid fa-coffee fa-beat"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- And Header/Navbar -->
+
+    <section
+        class="relative mx-auto max-w-screen-xl px-4 bg-[url(https://i.pinimg.com/736x/b5/a6/1d/b5a61d83ec12080cd079722b92c98a39.jpg)] bg-cover bg-center bg-no-repeat"
+        style="background-attachment: fixed;">
+        <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+            <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                <h1 class="text-3xl font-extrabold text-white sm:text-5xl">
+
+                    <strong class="block font-extrabold text-rose-500"> Kouvie Still Story. </strong>
+                </h1>
+                <p class="mt-4 max-w-base text-white sm:text-xl/relaxed">
+                    "Kouvie is still the best choice for you, don't forget to stop by and feel the sensation of the
+                    pleasure of the products we have."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative w-full h-full mx-auto max-w-screen-xl px-4 py-16">
+        <h2 class="text-3xl text-center font-semibold mb-8">About Us</h2>
+        <div class="flex flex-col md:flex-row items-center justify-between p-6 bg-white">
+
+            <div class="md:w-1/2 py-4" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                <h2 class="text-3xl font-bold mb-4">- OUR <span class="text-3xl font-medium mb-4">BEGINNING
+                        -</span>
+                </h2>
+                <p class="text-sm text-gray-700 mb-6">
+                    " In the heart of a bustling city, hidden among the high-rise buildings and bustling streets, lies a
+                    place that offers more than just a cup of coffee. Kouvie Still, a newly established coffee business,
+                    has changed the way people view the coffee experience.
+
+                    Starting from a simple dream, Kouvie Still was founded by two friends, Aria and Bima, who have a
+                    deep love for coffee and the art of brewing. They both spent years exploring various corners of the
+                    world to find the best coffee beans, learning different brewing techniques, and understanding how
+                    each cup of coffee can tell a story.
+
+                    Kouvie Still’s concept is to create a coffee experience that not only quenches thirst but also
+                    touches the soul. Inside their cozy shop, customers are greeted with the alluring aroma of coffee
+                    and a warm atmosphere. Every detail, from the modern yet welcoming interior design, to the exclusive
+                    selection of coffee beans, is designed with care. ".
+                </p>
+                <br>
+            </div>
+
+            <!-- Bagian Kanan: Gambar dengan efek parallax -->
+            <div class="md:w-1/2 mt-6 md:mt-0 md:ml-6 order-first md:order-none w-full parallax-container">
+                <div class="relative">
+                    <!-- Gambar utama dengan efek 3D parallax -->
+                    <img src="https://i.pinimg.com/564x/fd/f9/77/fdf97707b757684b97e5727f20c19bca.jpg"
+                        alt="Gambar utama" class=" w-full h-64 md:h-80 object-cover shadow-lg" data-aos="fade-right"
+                        data-aos-anchor-placement="top-center">
+                </div>
+
+                <div class="mt-4 grid grid-cols-2 gap-4">
+                    <!-- Gambar kecil kiri bawah dengan efek 3D parallax -->
+                    <img id="image-sma-1" src="https://i.pinimg.com/564x/ab/40/e6/ab40e6c73f444689ef6d2924d8a03e43.jpg"
+                        alt="Gambar kecil 1" class="parallax-image w-full h-24 md:h-32 object-cover shadow-lg">
+                    <!-- Gambar kecil kanan bawah dengan efek 3D parallax -->
+                    <img id="image-sma-2" src="https://i.pinimg.com/564x/87/4b/bc/874bbc07a983bb882bc84146fe67a8ee.jpg"
+                        alt="Gambar kecil 2" class="parallax-image w-full h-24 md:h-32 object-cover shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative w-full h-full mx-auto max-w-screen-xl px-4 py-16">
+        <div class="flex flex-col md:flex-row items-center justify-between p-6 bg-white">
+            <div class="md:w-1/2 mt-6 md:mt-0 w-full parallax-container md:mr-6">
+                <div class="relative">
+                    <img src="https://i.pinimg.com/564x/a0/8f/13/a08f138b552b28ece4320969711e257f.jpg"
+                        alt="Gambar utama" class="w-full h-64 md:h-80 object-cover shadow-lg" data-aos="fade-right"
+                        data-aos-anchor-placement="top-center">
+                </div>
+            </div>
+
+            <!-- Bagian Kanan: Konten teks -->
+            <div class="md:w-1/2 py-4 md:ml-0 text-left" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                <h2 class="text-3xl font-bold mb-4">- OUR <span class="text-3xl font-medium mb-4">BACKGROUND
+                        -</span>
+                </h2>
+                <p class="text-sm text-gray-700 mb-6">
+                    " What makes Kouvie Still unique is their philosophy: every cup of coffee is a blend of
+                    craftsmanship and art. They not only offer high-quality coffee, but also engage customers in an
+                    immersive taste journey. With each sip, customers are invited to experience a variety of flavors and
+                    aromas that tell the story of the coffee bean’s origin ".
+                </p><br>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-white text-black relative w-full h-full mx-auto max-w-screen-xl px-4">
+        <div
+            class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 relative w-full h-full mx-auto max-w-screen-xl px-4">
+            <div class="flex flex-col items-center space-y-4">
+                <img src="https://i.pinimg.com/564x/74/41/19/74411976640decda2f8ef40d1d80aaea.jpg" alt="Halal Indonesia"
+                    class="h-14">
+                <p class="text-center text-sm">Created with <span class="text-lg"> <i class="fa-solid fa-heart fa-beat"
+                            style="color: red;"></i></span>
+                    by Al Ghazali.
+                </p>
+            </div>
+
+            <div class="text-center md:text-left space-y-2">
+                <h2 class="text-lg font-bold">OUR LOCATION</h2>
+                <p>Jl. Pakubuwono VI No. 10 RT 11/RW 2, Gunung, Kec. Kby. Baru,<br>
+                    Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12120</p>
+                <div class="w-full h-48 relative">
+                    <!-- Overlay untuk mengaktifkan scroll -->
+                    <div
+                        class="absolute inset-0 pointer-events-none hover:pointer-events-auto transition duration-300 ease-in-out">
+                    </div>
+                    <!-- Google Maps iframe -->
+                    <iframe class="w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126904.48589593935!2d106.68942814439808!3d-6.200937919556473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a9aef2dcfb%3A0x7abcb0dfaa0f4ca!2sJl.%20Pakubuwono%20VI%20No.107%2C%20Gunung%2C%20Kec.%20Kby.%20Baru%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012120!5e0!3m2!1sen!2sid!4v1639214343722!5m2!1sen!2sid"
+                        allowfullscreen="" loading="lazy" style="border:0;"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button
+            class="totop fixed bottom-4 right-4 bg-rose-600 text-white px-4 py-2 shadow-lg opacity-0 transition-opacity duration-500 hover:bg-rose-700">
+            <i class="fas fa-arrow-up fa-beat"></i>
+        </button>
+
+        <div class="text-center mt-8">
+            <p class="font-bold text-lg">Curhat Yuk Di<a href="tel:08170756865"
+                    class="hover:text-rose-600 transition duration-500"> Kouvie Still</a>
+                <i class="fab fa-whatsapp"></i> Whatsapp Chat Only
+            </p>
+            <p class="text-sm font-bold mt-4">Consumer Complaints Service Contact Information <br>
+                <span class="text-sm mt-4">Directorate General of Consumer Protection and Trade Compliance, Ministry of
+                    Trade of
+                    the Republic of Indonesia <br>
+                    Whatsapp Ditjen PKTN: 0853-1111-1010</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- And Footer -->
+
+    <!-- Script Js  -->
+    <script src="script.js"></script>
+    <!-- Script Js  -->
+
+    <!-- Animate scroll script AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- And Animate scroll script AOS -->
+
+</body>
+
+</html>

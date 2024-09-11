@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kouvie Still</title>
+
+    <!-- Installition Tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- And Installition Tailwind css  -->
+
+    <!-- Style css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Style css  -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts -->
+
+    <!-- Scroll Animate AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- And Scroll Animate AOS -->
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- And Link Font Awesome -->
+
+    <!-- Script Icons -->
+    <script src="https://kit.fontawesome.com/c5a550f03c.js" crossorigin="anonymous"></script>
+    <!-- And Script Icons -->
+
+    <!-- Image Icons -->
+    <link rel="icon" href="https://i.pinimg.com/564x/51/08/59/5108592a4e3c87dfbfeca3aa8f415490.jpg" type="image/gif"
+        sizes="16x16">
+    <!-- Image Icons -->
+
+</head>
+
+<body>
+
+    <!-- Header/Navbar -->
+    <div
+        class="flex justify-between items-center py-6 px-4 sticky top-0 bg-white z-50 relative w-full h-full mx-auto max-w-screen-xl px-4">
+        <!-- Logo -->
+        <a href="index.html">
+            <div class="flex items-center items-center">
+                <span class="text-xl sm:text-2xl md:text-2xl font-bold italic text-rose-600">Kouvie</span>
+                <span class="text-xl sm:text-2xl md:text-2xl font-bold italic text-black">still</span>
+                <span class="ml-1 text-red-500"><i class="fa-solid fa-coffee fa-beat"></i></span>
+            </div>
+        </a>
+        <!-- Hamburger Menu (Muncul untuk layar di bawah 1024px) -->
+        <div class="lg:hidden">
+            <button id="hamburger" class="relative w-6 h-6 flex flex-col justify-center items-center space-y-0.6"
+                onclick="toggleMenu()">
+                <!-- Garis 1 -->
+                <span class="block w-6 h-0.5 bg-black transform transition duration-500 ease-in-out origin-center"
+                    id="line1"></span>
+                <!-- Garis 2 -->
+                <span class="block w-6 h-0.5 bg-black transform transition duration-500 ease-in-out origin-center"
+                    id="line2"></span>
+            </button>
+        </div>
+
+        <!-- Menu Navigasi (Hanya muncul di layar besar) -->
+        <div class="hidden lg:flex space-x-6">
+            <a href="order.html"
+                class="text-gray-500 text-xs font-medium hover:text-black font-bold border-b-2 border-transparent hover:border-rose-600 transition duration-500">Product</a>
+            <a href="about.html"
+                class="text-gray-500 text-xs font-medium hover:text-black font-bold border-b-2 border-transparent hover:border-rose-600 transition duration-500">About</a>
+            <a href="story.html"
+                class="text-gray-500 text-xs font-medium hover:text-black font-bold border-b-2 border-transparent hover:border-rose-600 transition duration-500">Story</a>
+            <a href="#"
+                class="text-gray-500 text-xs font-medium hover:text-black font-bold border-b-2 border-transparent hover:border-rose-600 transition duration-500">No
+                Hp
+            </a>
+            <span class="ml-1 text-red-500"><i class="fa-solid fa-coffee fa-beat"></i></span>
+        </div>
+    </div>
+
+    <!-- Sidebar / Slide Menu with Fade Up -->
+    <div id="slideMenu"
+        class="fixed inset-x-0 bottom-0 bg-white transform translate-y-full opacity-0 transition-all fade-up duration-700 ease-in-out px-4 z-20">
+        <div class="flex flex-col items-center justify-center text-center h-screen p-4 space-y-4">
+            <a href="order.html"
+                class="opacity-1 transition-all fade-up duration-700 ease-in-out text-black text-2xl font-medium hover:text-gray-500">Product</a>
+            <a href="about.html"
+                class="opacity-1 transition-all fade-up duration-700 ease-in-out text-black text-2xl font-medium hover:text-gray-500">About</a>
+            <a href="story.html"
+                class="opacity-1 transition-all fade-up duration-700 ease-in-out text-black text-2xl font-medium hover:text-gray-500">Story</a>
+            <a href="#"
+                class="opacity-1 transition-all fade-up duration-700 ease-in-out text-black text-2xl font-medium hover:text-gray-500">No
+                Hp
+            </a>
+            <br>
+            <div class="flex items-center items-center py-32">
+                <span class="text-xl sm:text-2xl md:text-2xl font-bold italic text-rose-600">Kouvie</span>
+                <span class="text-xl sm:text-2xl md:text-2xl font-bold italic text-black">still</span>
+                <span class="ml-1 text-red-500"><i class="fa-solid fa-coffee fa-beat"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- And Header/Navbar -->
+
+    <!-- Hero Section -->
+    <video autoplay muted loop
+        class="absolute inset-0 w-full h-auto max-h-[100vh] object-cover lg:max-h-[80vh] xl:max-h-[90vh] 2xl:max-h-[100vh] relative mx-auto max-w-screen-xl px-4">
+        <source src="Image/d33aa1bb4720abd586da8327425ac62d.mp4" type="video/mp4" id="home">
+    </video>
+    <!-- And Hero Section -->
+
+    <!-- About Section -->
+    <div
+        class="relative w-full h-full mx-auto max-w-screen-xl px-4 flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-8 lg:space-y-0 px-4 py-24">
+        <!-- Phone Image -->
+        <div class="w-full lg:w-1/2 flex justify-center items-center">
+            <img src="https://i.pinimg.com/564x/63/e7/9f/63e79f17b47c4c0ca006dfdbd98811b7.jpg" alt="Deskripsi Gambar" class="w-full max-w-md lg:max-w-sm">
+        </div>
+        
+        <!-- Text Section -->
+        <div class="w-full lg:w-1/2 space-y-4">
+            <h2 class="text-2xl lg:text-2xl font-bold text-black">FIRST SOUTHEAST ASIAN F&B NEW RETAIL UNICORN</h2>
+            <p class="text-sm font-semibold text-black">"Kouvie Still is one of the fast-growing healthy beverage brands in Indonesia. Starting from the desire of its founders to provide fresh drinks with natural ingredients, Kouvie Still is here to support a healthy lifestyle. As a local product, this brand has a vision to introduce quality drinks from Indonesia that can be enjoyed by the wider community, both domestically and internationally".
+            </p>
+        </div>
+    </div>
+    <!-- And About Section -->
+
+    <!-- About 2 Section -->
+    <section class="bg-white py-16">
+        <h3 class="text-3xl text-center font-semibold mb-8">We started operation in 2023, and todate:</h3>
+        <div class="py-4 px-4 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+                <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
+                    <a href="" class="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40 flex-grow">
+                        <img src="https://i.pinimg.com/564x/b2/8f/a5/b28fa5b1b64a41ce1ac8c5e31516684f.jpg" alt=""
+                            class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                        <h3
+                            class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                        </h3>
+                    </a>
+                </div>
+                <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+                    <a href="" class="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40 mb-4">
+                        <img src="https://i.pinimg.com/564x/cf/4f/32/cf4f322852dcf41f547104d6b096047a.jpg" alt=""
+                            class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                        <h3
+                            class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                        </h3>
+                    </a>
+                    <div class="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
+                        <a href="" class="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40">
+                            <img src="https://i.pinimg.com/564x/d6/0a/f6/d60af6b6b797942146640a034ab145a6.jpg" alt=""
+                                class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                            <h3
+                                class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                            </h3>
+                        </a>
+                        <a href="" class="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40">
+                            <img src="https://i.pinimg.com/564x/67/0f/77/670f774386a3d54abbeb3bf7ec010eea.jpg" alt=""
+                                class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                            <h3
+                                class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
+                    <a href="" class="group relative flex flex-col overflow-hidden px-4 pb-4 pt-40 flex-grow">
+                        <img src="https://i.pinimg.com/564x/71/26/95/712695f038c15ddca9ad6193f40f5490.jpg" alt=""
+                            class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                        <h3
+                            class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- And Abou 2 Section -->
+
+    <!-- Footer -->
+    <footer class="py-8 bg-white text-black relative">
+        <div
+            class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 relative w-full h-full mx-auto max-w-screen-xl px-4">
+            <div class="flex flex-col items-center space-y-4">
+                <img src="https://i.pinimg.com/564x/74/41/19/74411976640decda2f8ef40d1d80aaea.jpg" alt="Halal Indonesia"
+                    class="h-14">
+                <p class="text-center text-sm">Created with <span class="text-lg"> <i class="fa-solid fa-heart fa-beat"
+                            style="color: red;"></i></span>
+                    by Al Ghazali.
+                </p>
+            </div>
+
+            <div class="text-center md:text-left space-y-2">
+                <h2 class="text-lg font-bold">OUR LOCATION</h2>
+                <p>Jl. Pakubuwono VI No. 10 RT 11/RW 2, Gunung, Kec. Kby. Baru,<br>
+                    Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12120</p>
+                <div class="w-full h-48 relative">
+                    <!-- Overlay untuk mengaktifkan scroll -->
+                    <div
+                        class="absolute inset-0 pointer-events-none hover:pointer-events-auto transition duration-300 ease-in-out">
+                    </div>
+                    <!-- Google Maps iframe -->
+                    <iframe class="w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126904.48589593935!2d106.68942814439808!3d-6.200937919556473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a9aef2dcfb%3A0x7abcb0dfaa0f4ca!2sJl.%20Pakubuwono%20VI%20No.107%2C%20Gunung%2C%20Kec.%20Kby.%20Baru%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012120!5e0!3m2!1sen!2sid!4v1639214343722!5m2!1sen!2sid"
+                        allowfullscreen="" loading="lazy" style="border:0;"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button
+            class="totop fixed bottom-4 right-4 bg-rose-600 text-white px-4 py-2 shadow-lg opacity-0 transition-opacity duration-500 hover:bg-rose-700">
+            <i class="fas fa-arrow-up fa-beat"></i>
+        </button>
+
+        <div class="text-center mt-8">
+            <p class="font-bold text-lg">Curhat Yuk Di<a href="tel:08170756865"
+                    class="hover:text-rose-600 transition duration-500"> Kouvie Still</a>
+                <i class="fab fa-whatsapp"></i> Whatsapp Chat Only
+            </p>
+            <p class="text-sm font-bold mt-4">Consumer Complaints Service Contact Information <br>
+                <span class="text-sm mt-4">Directorate General of Consumer Protection and Trade Compliance, Ministry of
+                    Trade of
+                    the Republic of Indonesia <br>
+                    Whatsapp Ditjen PKTN: 0853-1111-1010</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- And Footer -->
+
+    <!-- Script Js  -->
+    <script src="script.js"></script>
+    <!-- Script Js  -->
+
+    <!-- Animate scroll script AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- And Animate scroll script AOS -->
+
+</body>
+
+</html>

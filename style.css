@@ -1,0 +1,58 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* INDEX HTML*/
+
+/* Slider */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* And Slider */
+
+/* Container Gallery */
+.gallery-filter {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.gallery-filter:hover {
+  filter: grayscale(0%);
+}
+
+/* And Container Gallery */
+
+/* Efect Parallax */
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-image {
+  transform: translateZ(0);
+  transition: transform 0.1s ease-out;
+}
+
+/* Tambahkan perspektif untuk memberikan efek 3D */
+.parallax-container {
+  perspective: 1000px;
+}
+
+/* And Efect Parallax */
+
+/* And INDEX HTML*/
+
+/* ORDER HTML */
+
+/* Effect Zoom-in produk*/
+.zoom-in {
+  transition: transform 0.6s ease-in-out;
+}
+
+/* And Effect Zoom-in produk*/
+
+/* ORDER HTML */
+
