@@ -65,8 +65,8 @@ function parallaxEffect() {
   // Memeriksa apakah halaman di-scroll ke bawah
   if (scrollTop > 0) {
     // Mengambil gambar utama dan gambar kecil
-    const imageSmall1 = document.getElementById('image-sma-1');
-    const imageSmall2 = document.getElementById('image-sma-2');
+    const imageSmall1 = document.getElementById('image-small-1');
+    const imageSmall2 = document.getElementById('image-small-2');
 
     // Menyesuaikan kecepatan gerakan gambar kecil untuk scroll down
     imageSmall1.style.transform = `translateX(${scrollTop * 0.1}px)`; // Gerakan ke kanan
